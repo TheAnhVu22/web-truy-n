@@ -19,7 +19,7 @@ class ChapterController extends Controller
     public function index()
     {   // không thấy khác nhau
         $Chapter = Chapter::with('Truyen')->orderBy('id',"DESC")->get();
-        // $Chapter = Chapter::orderBy('id',"DESC")->get();
+         $Chapter = Chapter::orderBy('id',"DESC")->get();
         return view('admincp.chapter.index',compact('Chapter'));
     }
 
