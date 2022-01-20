@@ -6,8 +6,6 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Greeting
-          command: echo Hello, world.
           name: upgrade hugo
           command: |
             apk update && apk add ca-certificates && update-ca-certificates && apk add openssl && apk add openssh-client
